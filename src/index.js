@@ -63,7 +63,7 @@ export default class ReactImgr extends Component {
 	registerForLazyLoad = () => {
 		var e = this;
 		if (this.actualImgRef && this.preloadImgRef) {
-			var n = p['progressive-image-loaded'];
+			var n = 'progressive-image-loaded';
 			this.lazyId = lazyloadUtil().register(this.preloadImgRef, function() {
 				return (
 					e.lazyId && lazyloadUtil().unregister(e.lazyId),
