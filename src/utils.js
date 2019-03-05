@@ -1,9 +1,7 @@
 /*eslint-disable */
+import a from 'fbjs/lib/ExecutionEnvironment.js';
 
-export function shallowEqual(e, t, n) {
-	// n.d(t, 'a', function() {
-	// 	return o;
-	// });
+export function shallowEqual() {
 	var r =
 			'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
 				? function(e) {
@@ -35,7 +33,6 @@ function uniqueId() {
 	var e = 0;
 	return ((arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0) + e++).toString();
 }
-import a from 'fbjs/lib/ExecutionEnvironment.js';
 
 export function lazyloadUtil() {
 	var e = {},
@@ -98,7 +95,6 @@ export function lazyloadUtil() {
 			}
 		}
 	};
-	// t.a = i;
 }
 
 export function domHelper(e, t, n) {
@@ -240,20 +236,6 @@ export function scrollUtil() {
 }
 
 export function easingEquations() {
-	// 'use strict';
-	// var r;
-	// n.d(t, 'a', function() {
-	// 	return r;
-	// }),
-	// 	(function(e) {
-	// 		(e.linear = 'linear'),
-	// 			(e.easeInSine = 'easeInSine'),
-	// 			(e.easeOutSine = 'easeOutSine'),
-	// 			(e.easeInOutSine = 'easeInOutSine'),
-	// 			(e.easeFromTo = 'easeFromTo'),
-	// 			(e.easeFrom = 'easeFrom'),
-	// 			(e.easeTo = 'easeTo');
-	// 	})((r = r || (r = {})));
 	return {
 		linear: function(e) {
 			return e;

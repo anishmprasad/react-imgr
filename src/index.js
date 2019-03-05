@@ -5,6 +5,9 @@ import classnames from 'classnames';
 import { shallowEqual, lazyloadUtil, domHelper } from './utils';
 import './styles.scss';
 export default class ReactImgr extends Component {
+	state = {
+		preloadImgLoaded: !1
+	};
 	f(e, t, n) {
 		return (
 			t in e
@@ -44,9 +47,6 @@ export default class ReactImgr extends Component {
 	setPreloadImgRef = e => {
 		this.preloadImgRef = e;
 	};
-	state = {
-		preloadImgLoaded: !1
-	};
 	shouldComponentUpdate(e, t) {
 		return !Object(shallowEqual)(this.props, e) || !Object(shallowEqual)(this.state, t);
 	}
@@ -62,7 +62,6 @@ export default class ReactImgr extends Component {
 	}
 	registerForLazyLoad = () => {
 		var e = this;
-		var t = this.actualImgRef;
 		if (this.actualImgRef && this.preloadImgRef) {
 			var n = p['progressive-image-loaded'];
 			this.lazyId = lazyloadUtil().register(this.preloadImgRef, function() {
