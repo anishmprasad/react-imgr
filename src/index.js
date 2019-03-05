@@ -128,7 +128,7 @@ export default class ReactImgr extends Component {
 }
 ReactImgr.defaultProps = {
 	placeholder: 'https://via.placeholder.com/67x83',
-	preloadSrc='https://via.placeholder.com/50x50',
+	preloadSrc: 'https://via.placeholder.com/50x50',
 	src: 'https://via.placeholder.com/3376x560',
 	initialBlur: !0,
 	scale: !0,
