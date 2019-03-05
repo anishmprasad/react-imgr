@@ -4,16 +4,6 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { shallowEqual, lazyloadUtil, domHelper } from './utils';
 import './styles.scss';
-
-const p = {
-	'progressive-img-cont': '_2tnqd0',
-	'scale-width': '_1_l8MX',
-	'actual-img': '_232NW7',
-	'preload-img': '_2VeolH',
-	'progressive-image-loaded': 'dImZt_',
-	blur: '_3I5S6S',
-	'scale-height': '_2FRM9i'
-};
 export default class ProgressiveImage extends Component {
 	f(e, t, n) {
 		return (
