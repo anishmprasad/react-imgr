@@ -4,7 +4,7 @@
 	"description": "react-imgr is an <img> tag replacement for react",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/anishmprasad/imagetag.git"
+		"url": "git+https://github.com/anishmprasad/react-imgr.git"
 	},
 	"main": "dist/index.js",
 	"style": "dist/styles.css",
