@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { shallowEqual, lazyloadUtil, domHelper } from './utils';
 import './styles.scss';
-export default class ProgressiveImage extends Component {
+export default class ReactImgr extends Component {
 	f(e, t, n) {
 		return (
 			t in e
@@ -127,7 +127,7 @@ export default class ProgressiveImage extends Component {
 		);
 	}
 }
-ProgressiveImage.defaultProps = {
+ReactImgr.defaultProps = {
 	src: 'https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg',
 	initialBlur: !0,
 	scale: !0,
