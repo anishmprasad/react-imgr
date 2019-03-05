@@ -97,7 +97,7 @@ export default class ReactImgr extends Component {
 			l = t.preloadImgClassName,
 			u = t.className,
 			d = t.containerClassName,
-			m = (t.impressionId, this.state.preloadImgLoaded),
+			m = this.state.preloadImgLoaded,
 			h = classnames(
 				(this.f((e = {}), 'progressive-img-cont', !0),
 				this.f(e, 'scale-width', m && c && this.preloadImgWidth >= this.preloadImgHeight),
@@ -127,12 +127,13 @@ export default class ReactImgr extends Component {
 	}
 }
 ReactImgr.defaultProps = {
-	src: 'https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg',
+	placeholder: 'https://via.placeholder.com/67x83',
+	preloadSrc='https://via.placeholder.com/50x50',
+	src: 'https://via.placeholder.com/3376x560',
 	initialBlur: !0,
 	scale: !0,
 	containerStyle: {
 		width: '100%',
 		height: '100%'
-	},
-	placeholder: 'https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg'
+	}
 };

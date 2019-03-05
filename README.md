@@ -27,57 +27,35 @@ import Image from 'react-imgr';
 
 <Image
     src='image.jpg'
-	impressionId='M_f68878c3-688f-4897-bc37-1b0e9b005637_1.FFCP6EYRO2V6'
+    preloadSrc='preloadimage.jpg'
 	containerStyle={{
 		width: '100%',
 		height: 280
 	}}
-	initialBlur={true}
-	alt='02-03-2019-Slot-7'
-    scale={true}
+	initialBlur
+	alt='alt tag added here'
+    scale
     placeholder='placeholder.jpg'
 />
 ```
 
-**Options**
+### Props
 
-sample option 1
-
-```JavaScript
-
-const options = [
-  'one', 'two', 'three'
-];
-```
-
-sample option 2
-
-```JavaScript
-
-const options = [
-  { value: 'one', label: 'One' },
-  { value: 'two', label: 'Two', className: 'myOptionClassName' },
-  {
-   type: 'group', name: 'group1', items: [
-     { value: 'three', label: 'Three', className: 'myOptionClassName' },
-     { value: 'four', label: 'Four' }
-   ]
-  },
-  {
-   type: 'group', name: 'group2', items: [
-     { value: 'five', label: 'Five' },
-     { value: 'six', label: 'Six' }
-   ]
-  }
-];
-```
+| Name           | Type      | Required | Description                      |
+| -------------- | --------- | -------- | -------------------------------- |
+| src            | `string`  | `true`   | the src of image                 |
+| preloadSrc     | `string`  | `false`  | the src image preload src        |
+| containerStyle | `object`  | `false`  | container css styles             |
+| initialBlur    | `boolean` | `true`   | the src initial state            |
+| alt            | `string`  | `true`   | the src alt tag                  |
+| scale          | `boolean` | `false`  | scale the src image              |
+| placeholder    | `string`  | `true`   | the src of the placeholder image |
 
 ### TODO
 
 -   [x] Production Level
 -   [ ] CSS Polishing and Transitions
 -   [ ] Documentation
--   [ ] etc..
 
 **Run example**
 
