@@ -110,9 +110,9 @@ export default class ProgressiveImage extends Component {
 			d = t.containerClassName,
 			m = (t.impressionId, this.state.preloadImgLoaded),
 			h = classnames(
-				(this.f((e = {}), p['progressive-img-cont'], !0),
-				this.f(e, p['scale-width'], m && c && this.preloadImgWidth >= this.preloadImgHeight),
-				this.f(e, p['scale-height'], m && c && this.preloadImgWidth < this.preloadImgHeight),
+				(this.f((e = {}), 'progressive-img-cont', !0),
+				this.f(e, 'scale-width', m && c && this.preloadImgWidth >= this.preloadImgHeight),
+				this.f(e, 'scale-height', m && c && this.preloadImgWidth < this.preloadImgHeight),
 				e),
 				d
 			);
@@ -124,12 +124,12 @@ export default class ProgressiveImage extends Component {
 			},
 			React.createElement('img', {
 				ref: this.setActualImgRef,
-				className: classnames(p['actual-img'], u),
+				className: classnames('actual-img', u),
 				alt: this.props.alt || ''
 			}),
 			React.createElement('img', {
 				ref: this.setPreloadImgRef,
-				className: classnames(p['preload-img'], this.f({}, p.blur, s), l),
+				className: classnames('preload-img', this.f({}, 'blur', s), l),
 				src: o || n,
 				alt: this.props.alt || '',
 				onLoad: this.onPreloadImageLoad
