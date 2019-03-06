@@ -1,6 +1,6 @@
 {
 	"name": "react-imgr",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "react-imgr is an <img> tag replacement for react",
 	"repository": {
 		"type": "git",

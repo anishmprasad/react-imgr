@@ -47,11 +47,11 @@ export default class ReactImgr extends Component {
 	setPreloadImgRef = e => {
 		this.preloadImgRef = e;
 	};
-	shouldComponentUpdate(e, t) {
-		return !Object(shallowEqual)(this.props, e) || !Object(shallowEqual)(this.state, t);
+	shouldComponentUpdate(nextProps, nextState) {
+		return !Object(shallowEqual)(this.props, nextProps) || !Object(shallowEqual)(this.state, nextState);
 	}
-	componentWillReceiveProps(e) {
-		Object(shallowEqual)(this.props, e) ||
+	componentWillReceiveProps(nextProps) {
+		Object(shallowEqual)(this.props, nextProps) ||
 			(this.lazyId && lazyloadUtil().unregister(this.lazyId), this.registerForLazyLoad());
 	}
 	componentDidMount() {
@@ -90,18 +90,13 @@ export default class ReactImgr extends Component {
 		var e,
 			t = this.props,
 			n = t.src,
-			r = t.containerStyle,
 			o = t.preloadSrc,
-			s = t.initialBlur,
-			c = t.scale,
-			l = t.preloadImgClassName,
-			u = t.className,
 			d = t.containerClassName,
 			m = this.state.preloadImgLoaded,
 			h = classnames(
 				(this.f((e = {}), 'progressive-img-cont', !0),
-				this.f(e, 'scale-width', m && c && this.preloadImgWidth >= this.preloadImgHeight),
-				this.f(e, 'scale-height', m && c && this.preloadImgWidth < this.preloadImgHeight),
+				this.f(e, 'scale-width', m && this.props.scale && this.preloadImgWidth >= this.preloadImgHeight),
+				this.f(e, 'scale-height', m && this.props.scale && this.preloadImgWidth < this.preloadImgHeight),
 				e),
 				d
 			);
@@ -109,16 +104,20 @@ export default class ReactImgr extends Component {
 			'div',
 			{
 				className: h,
-				style: r
+				style: this.props.containerStyle
 			},
 			React.createElement('img', {
 				ref: this.setActualImgRef,
-				className: classnames('actual-img', u),
+				className: classnames('actual-img', this.props.className),
 				alt: this.props.alt || ''
 			}),
 			React.createElement('img', {
 				ref: this.setPreloadImgRef,
-				className: classnames('preload-img', this.f({}, 'blur', s), l),
+				className: classnames(
+					'preload-img',
+					this.f({}, 'blur', this.props.initialBlur),
+					this.props.preloadImgClassName
+				),
 				src: o || n,
 				alt: this.props.alt || '',
 				onLoad: this.onPreloadImageLoad
