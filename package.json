@@ -1,6 +1,6 @@
 {
 	"name": "react-imgr",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "react-imgr is an <img> tag replacement for react",
 	"repository": {
 		"type": "git",
@@ -18,7 +18,9 @@
 		"node-sass": "^4.11.0",
 		"postcss-modules": "^1.4.1",
 		"react": "^16.7.0",
-		"react-dom": "^16.7.0"
+		"react-dom": "^16.7.0",
+		"fbjs": "^1.0.0",
+		"classnames": "^2.2.6"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -35,6 +37,10 @@
 		"babel-preset-react": "^6.24.1",
 		"babel-preset-stage-2": "^6.24.1",
 		"babelrc-rollup": "3.0.0"
+	},
+	"peerDependencies": {
+		"fbjs": "^1.0.0",
+		"classnames": "^2.2.6"
 	},
 	"keywords": [
 		"react-component",
