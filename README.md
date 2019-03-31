@@ -57,12 +57,6 @@ import Image from 'react-imgr';
 -   [ ] CSS Polishing and Transitions
 -   [ ] Documentation
 
-**Run example**
-
-```
-$ npm start
-```
-
 ### License
 
-MIT
+Apache 2.0

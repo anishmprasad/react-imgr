@@ -1,13 +1,13 @@
 {
 	"name": "react-imgr",
-	"version": "1.0.9",
+	"version": "1.1.0",
 	"description": "react-imgr is an <img> tag replacement for react",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/anishmprasad/react-imgr.git"
 	},
 	"main": "dist/index.js",
-	"style": "dist/styles.css",
+	"style": "dist/styles.min.css",
 	"files": [
 		"lib",
 		"dist"
@@ -21,13 +21,6 @@
 		"react-dom": "^16.7.0",
 		"fbjs": "^1.0.0",
 		"classnames": "^2.2.6"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"rollup": "rollup -c"
 	},
 	"devDependencies": {
 		"babel-cli": "6.14.0",
