@@ -1,6 +1,6 @@
 {
 	"name": "react-imgr",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "react-imgr is an <img> tag replacement for react",
 	"repository": {
 		"type": "git",
@@ -39,7 +39,11 @@
 		"react-component",
 		"progressive-image",
 		"lazy-load",
-		"react"
+		"react",
+		"image-lazyload",
+		"image-component",
+		"image",
+		"img"
 	],
 	"author": "anish.m.prasad",
 	"license": "ISC",
