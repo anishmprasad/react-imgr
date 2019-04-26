@@ -51,6 +51,10 @@ import Image from 'react-imgr';
 | scale          | `boolean` | `false`  | scale the src image              |
 | placeholder    | `string`  | `true`   | the src of the placeholder image |
 
+### Demo
+
+[codesandbox.io](https://codesandbox.io/embed/xj5p7lzlnp)
+
 ### TODO
 
 -   [x] Production Level
