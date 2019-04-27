@@ -58,6 +58,7 @@ import Image from 'react-imgr';
 ### TODO
 
 -   [x] Production Level
+-.  [ ] Optimization
 -   [ ] CSS Polishing and Transitions
 -   [ ] Documentation
 
