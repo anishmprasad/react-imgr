@@ -1,6 +1,6 @@
 # react-imgr
 
-Progressive Image component for React.
+A Progressive Image component for React.
 
 ### Installation
 
