@@ -28,12 +28,12 @@ import Image from 'react-imgr';
 <Image
     src='image.jpg'
     preloadSrc='preloadimage.jpg'
-	containerStyle={{
-		width: '100%',
-		height: 280
-	}}
-	initialBlur
-	alt='alt tag added here'
+    containerStyle={{
+	width: '100%',
+	height: 280
+    }}
+    initialBlur
+    alt='alt tag added here'
     scale
     placeholder='placeholder.jpg'
 />
