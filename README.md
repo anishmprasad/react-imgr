@@ -57,10 +57,10 @@ import Image from 'react-imgr';
 
 ### TODO
 
--   [x] Production Ready
 -   [x] Optimization
--   [ ] CSS Polishing and Transitions
--   [ ] Documentation
+-   [x] CSS Polishing and Transitions
+-   [x] Documentation
+-   [x] Production Ready
 
 ### License
 
