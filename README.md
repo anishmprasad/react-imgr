@@ -54,7 +54,9 @@ import Image from 'react-imgr';
 ### Demo
 
 [codesandbox.io](https://codesandbox.io/embed/xj5p7lzlnp)
+
 [anishmprasad.com](https://anishmprasad.com/opensource/react-imgr)
+
 [anishmprasad.github.io](https://anishmprasad.github.io/opensource/react-imgr)
 
 ### TODO
