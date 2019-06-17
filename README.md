@@ -1,6 +1,6 @@
 # react-imgr
 
-Progressive Image component for React.
+A Progressive Image component for React.
 
 ### Installation
 
@@ -28,12 +28,12 @@ import Image from 'react-imgr';
 <Image
     src='image.jpg'
     preloadSrc='preloadimage.jpg'
-	containerStyle={{
-		width: '100%',
-		height: 280
-	}}
-	initialBlur
-	alt='alt tag added here'
+    containerStyle={{
+	width: '100%',
+	height: 280
+    }}
+    initialBlur
+    alt='alt tag added here'
     scale
     placeholder='placeholder.jpg'
 />
@@ -51,11 +51,20 @@ import Image from 'react-imgr';
 | scale          | `boolean` | `false`  | scale the src image              |
 | placeholder    | `string`  | `true`   | the src of the placeholder image |
 
+### Demo
+
+[codesandbox.io](https://codesandbox.io/embed/xj5p7lzlnp)
+
+[anishmprasad.com](https://anishmprasad.com/opensource/react-imgr)
+
+[anishmprasad.github.io](https://anishmprasad.github.io/opensource/react-imgr)
+
 ### TODO
 
--   [x] Production Level
--   [ ] CSS Polishing and Transitions
--   [ ] Documentation
+-   [x] Optimization
+-   [x] CSS Polishing and Transitions
+-   [x] Documentation
+-   [x] Production Ready
 
 ### License
 
