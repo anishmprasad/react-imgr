@@ -24,6 +24,7 @@ This is the basic usage of react-dropdown
 
 ```Javascript
 import Image from 'react-imgr';
+import 'react-imgr/dist/styles.min.css'
 
 <Image
     src='image.jpg'
