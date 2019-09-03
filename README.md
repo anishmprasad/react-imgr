@@ -6,10 +6,10 @@ A Progressive Image component for React.
 
 ```
 // with npm with react-compounds
-$ npm install @react-compounds/dropdown  --save
+$ npm install @react-compounds/image  --save
 
 // with yarn with react-compounds
-$ yarn add @react-compounds/dropdown
+$ yarn add @react-compounds/image
 
 // with npm
 $ npm install react-imgr  --save
