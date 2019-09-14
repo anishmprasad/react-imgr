@@ -31,7 +31,7 @@ import 'react-imgr/dist/styles.min.css'
     preloadSrc='preloadimage.jpg'
     containerStyle={{
 	width: '100%',
-	height: 280
+	height: '280px'
     }}
     initialBlur
     alt='alt tag added here'
