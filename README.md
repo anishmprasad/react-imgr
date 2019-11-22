@@ -5,6 +5,10 @@ A Progressive Image component for React.
 ### Installation
 
 ```
+
+// with npm with react-extensions
+$ npm install react-extensions
+
 // with npm with react-compounds
 $ npm install @react-compounds/image  --save
 
