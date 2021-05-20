@@ -70,6 +70,7 @@ import 'react-imgr/dist/styles.min.css'
 -   [x] CSS Polishing and Transitions
 -   [x] Documentation
 -   [x] Production Ready
+-   [ ] Code Cleanup
 
 ### License
 
